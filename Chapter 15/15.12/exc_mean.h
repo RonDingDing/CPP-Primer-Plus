@@ -25,4 +25,7 @@ public:
   const char *mesg();
 };
 
-inline const char *bad_gmean::mesg() { return "gmean() arguments should be >= 0\n"; }
+inline const char *bad_gmean::mesg()
+{
+  return "gmean() arguments should be >= 0\n";
+}
