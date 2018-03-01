@@ -5,7 +5,8 @@
         "ios": "cpp",
         "iosfwd": "cpp",
         "cwchar": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "cfloat": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
     "C_Cpp.errorSquiggles": "Disabled"
