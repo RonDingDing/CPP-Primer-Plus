@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+const int NUM = 5;
+int main()
+{
+    using std::cin;
+    using std::cout;
+    using std::endl;
+    using std::string;
+    using std::vector;
+
+    vector<int> ratings(NUM);
+    vector<string> titles(NUM);
+    cout << "You will do exactly as told. You will enter\n"
+         << NUM << " book titles and your ratings (0-10).\n";
+    int i;
+    for (i = 0; i < NUM; i++)
+    {
+        cout << "\nEnter title #" << i + 1 << ": ";
+        getline(cin, titles[i]);
+        cout << "Enter your ratings (0-10): ";
+        cin >> ratings[i];
+        cin.get();
+    }
+    cout << "Thank you. You entered the following:\n"
+         << "Rating\tBook\n";
+    for (i = 0; i < NUM; i++)
+    {
+        cout << ratings[i] << "\t" << titles[i] << endl;
+    }
+    return 0;
+}
