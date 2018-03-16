@@ -10,16 +10,10 @@
 //         printf("Hello CPP\n");
 //     }
 // };
-
+namespace jikexueyuan
+{
 void People::sayHello()
 {
     printf("Hello CPP\n");
 }
-
-int main(int argc, const char *argv[])
-{
-    People *p = new People();
-    p->sayHello();
-    delete p;
-    return 0;
 }
